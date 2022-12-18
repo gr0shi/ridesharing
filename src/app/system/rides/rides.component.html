@@ -1,0 +1,43 @@
+<p>rides works!</p>
+
+<nav>
+  <a [routerLink]="'/auth/login'"> Вход</a>
+  <a> / </a>
+  <a [routerLink]="'/auth/registration'"> Регистрация</a>
+</nav>
+
+<aside class="sidebar">
+  <nav class="menu">
+    <ul class="nav metismenu">
+      <li routerLinkAction="Active">
+        <a [routerLink]="'/system/home'">
+          <i>Домашняя страница</i>
+        </a>
+      </li>
+      <li routerLinkAction="Active">
+        <a [routerLink]="'/system/profile'">
+          <i>Профиль</i>
+        </a>
+      </li>
+      <li routerLinkAction="Active">
+        <a [routerLink]="'/system/rides'">
+          <i>Ваши поездки</i>
+        </a>
+      </li>
+      <li routerLinkAction="Active">
+        <a [routerLink]="'/system/find'">
+          <i>Найти поездку</i>
+        </a>
+      </li>
+      <li routerLinkAction="Active">
+        <a [routerLink]="'/system/publish'">
+          <i>Опубликовать поездку</i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+
+<article class="content dashboard-page">
+  <router-outlet></router-outlet>
+</article>

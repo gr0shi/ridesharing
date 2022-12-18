@@ -1,0 +1,16 @@
+<p>create-record works!</p>
+<form #f="ngForm" (ngSubmit)="onSubmit(f)">
+  <input type="text" placeholder="Название" ngModel name="name" #name="ngModel" required>
+  <span *ngIf="name.invalid && name.touched">
+    Поле нужно заполнить
+  </span>
+  <textarea placeholder="Описание" ngModel name="description" #description="ngModel" required></textarea>
+  <span *ngIf="description.invalid && description.touched">
+    Поле нужно заполнить
+  </span>
+  <input type="date" placeholder="Выберите дату" ngModel name="date" #date="ngModel" required>
+  <span *ngIf="date.invalid && date.touched">
+    Поле нужно заполнить
+  </span>
+  <button type="submit" [disabled]="f.invalid">Создать</button>
+</form>

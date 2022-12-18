@@ -1,0 +1,29 @@
+<h1 style="text-align: center">Авторизация</h1>
+<div class="alert-{{ message.type }}" *ngIf="message.text">
+</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="container">
+    <label for="email">Почта: </label>
+    <input type="text" placeholder="Введите почту" formControlName="email" />
+    <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+      <span *ngIf="form.get('email')?.errors?.['required']">Почта не должна быть пустой</span>
+      <span *ngIf="form.get('email')?.errors?.['email']">Почта должна содержать @</span>
+    </span>
+
+    <br />
+    <br />
+
+    <label for="password">Пароль : </label>
+    <input type="password" placeholder="Введите пароль" formControlName="password" />
+    <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+      <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
+    </span>
+    <button type="submit" [disabled]="form.invalid">Войти</button>
+    <div class="abc">
+      <input type="checkbox" checked="checked" /> Запомнить меня | Забыли
+      <a href="#"> пароль</a>? |
+      <a [routerLink]="'/auth/registration'"> Регистрация</a> |
+      <a routerLink=""> В начало</a>
+    </div>
+  </div>
+</form>

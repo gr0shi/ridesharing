@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "email": "root@mail.ru",
+      "name": "root",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "email": "name@mail.ru",
+      "name": "name",
+      "password": "123456",
+      "id": 2
+    }
+  ],
+  "ride": [
+    {
+      "name": "Название записи",
+      "date": "0012-12-12",
+      "description": "Текст записи",
+      "id": 1
+    },
+    {
+      "name": "Новая запись",
+      "date": "2022-11-26",
+      "description": "Описание новой записи",
+      "id": 2
+    }
+  ],
+  "profile": [
+    {
+      "firstName": "Maxim",
+      "lastName": "Grishin",
+      "gender": "Male",
+      "dateOfBirth": "07.04.2002",
+      "email": "maxjmg@mail.ru",
+      "about": "Nonumy est sit sea ut dolor dolore. Sit erat takimata et et sea vero no tempor.",
+      "isCar": false,
+      "phoneNumber": 89877557031,
+      "id": 1
+    }
+  ]
+}

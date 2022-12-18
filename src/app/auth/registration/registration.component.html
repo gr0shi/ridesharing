@@ -1,0 +1,41 @@
+<h1 style="text-align: center">Регистрация</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="container">
+    <label>Имя пользователя : </label>
+    <input type="text" placeholder="Имя" formControlName="name" />
+    <span *ngIf="form.get('name')?.invalid && form.get('name')?.touched">Имя не может быть пустым</span>
+
+    <br />
+    <br />
+
+    <label>Почта : </label>
+    <input type="text" placeholder="Введите почту" formControlName="email" />
+    <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+      <span *ngIf="form.get('email')?.errors?.['required']">Почта не должна быть пустой</span>
+      <span *ngIf="form.get('email')?.errors?.['email']">Почта должна содержать @</span>
+      <span *ngIf="form.get('email')?.errors?.['forbiddenEmail']">Почта уже занята</span>
+    </span>
+
+    <br />
+    <br />
+
+    <label>Пароль : </label>
+    <input type="password" placeholder="Придумайте пароль" formControlName="password" />
+    <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+      <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
+    </span>
+
+    <br />
+    <br />
+
+    <!-- <label>Повторите пароль : </label>
+    <input type="password" placeholder="Повторите пароль" formControlName="secondPassword" />
+    <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+      <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
+    </span> -->
+
+    <button type="submit" [disabled]="form.invalid">Зарегистрироваться</button>
+    Хотите <a [routerLink]="'/auth/login'"> Войти?</a> |
+    <a routerLink=""> В начало</a>
+  </div>
+</form>

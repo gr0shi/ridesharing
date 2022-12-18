@@ -1,0 +1,19 @@
+<p>edit-ride works!</p>
+<form #f="ngForm" (onSubmit)="onSubmit(f)">
+  <select [(ngModel)]="currentRideID" (cange)="onRideChange()" [ngModelOptions]="{standalone: true}">
+    <option *ngFor="let c of rides" [value]="c.id">{{c.name}}</option>
+  </select>
+  <input type="text" placeholder="Название" ngModel name="name" #name="ngModel" required>
+  <span *ngIf="name.invalid && name.touched">
+    Поле нужно заполнить
+  </span>
+  <textarea placeholder="Описание" ngModel name="description" #description="ngModel" required></textarea>
+  <span *ngIf="description.invalid && description.touched">
+    Поле нужно заполнить
+  </span>
+  <input type="text" placeholder="Выберите дату" ngModel name="date" #date="ngModel" required>
+  <span *ngIf="date.invalid && date.touched">
+    Поле нужно заполнить
+  </span>
+  <button type="submit" [disabled]="f.invalid">Редактировать</button>
+</form>
