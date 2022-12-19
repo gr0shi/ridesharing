@@ -1,4 +1,7 @@
+
 .hit-the-floor {
+  cursor: default;
+
   color: #fff;
   font-size: 12em;
   font-weight: bold;
@@ -20,7 +23,9 @@
 }
 
 .text{
-  color: rgb(255, 255, 255);
+  cursor: default;
+
+  color: rgb(230, 230, 230);
   text-align: center;
   font-size: 2.5em;
   font-family: Helvetica;
@@ -45,12 +50,9 @@
   font-family: Helvetica;
   text-shadow: 
   0 1px 0 #ccc, 
-
-
   0 1px 3px rgba(0,0,0,.3), 
   0 3px 5px rgba(0,0,0,.2), 
   0 5px 10px rgba(0,0,0,.25), 
-
 }
 
 .buttons-con .action-link-wrap {
@@ -58,7 +60,7 @@
 }
 
 .buttons-con .action-link-wrap a {
-  background: #c9c9c9;
+  background: #bebebe;
   padding: 8px 25px;
   border-radius: 4px;
   color: #FFF;
@@ -71,4 +73,7 @@
 
 .buttons-con .action-link-wrap a:hover {
   background: #5A5C6C;
+}
+.foot{
+  padding-bottom: 80px;
 }

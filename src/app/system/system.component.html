@@ -1,24 +1,27 @@
-<header>
-  <div class="topBar-inner">
+<div class="ind">
+  <header>
+    <div class="topBar-inner">
 
-    <div class="topBar-left">
-      <a [routerLink]="'/system/home'">Ridesharing Platform</a>
-    </div>
+      <div class="topBar-left">
+        <a class="rideshare" [routerLink]="'/system/home'">Ridesharing Platform</a>
+      </div>
 
-    <div class="topBar=center"></div>
+      <div class="topBar=center"></div>
 
-    <div class="topBar-right">
-      <a class="find-ride" routerLinkAction="Active" [routerLink]="'/system/find'">Найти поездку</a>
-      <a class="publish-ride" routerLinkAction="Active" [routerLink]="'/system/publish'">Опубликовать поездку</a>
-      <a class="rides" routerLinkAction="Active" [routerLink]="'/system/rides'">Ваши поездки</a>
-      <a class="profile" routerLinkAction="Active" [routerLink]="'/system/profile'">Профиль</a>
-      <div class="auth">
-        <button (click)="onLogout()">Выход</button>
+      <div class="topBar-right">
+        <a class="find-ride" routerLinkAction="Active" [routerLink]="'/system/find'">Найти поездку</a>
+        <a class="publish-ride" routerLinkAction="Active" [routerLink]="'/system/publish'">Опубликовать поездку</a>
+        <a class="rides" routerLinkAction="Active" [routerLink]="'/system/rides'">Ваши поездки</a>
+        <a class="profile" routerLinkAction="Active" [routerLink]="'/system/profile'">Профиль</a>
+        <div class="auth">
+          <a class="logout" (click)="onLogout()">Выход</a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-
-<div>
-  <router-outlet></router-outlet>
+  </header>
+  <main>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </main>
 </div>

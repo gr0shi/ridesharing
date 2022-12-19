@@ -1,4 +1,7 @@
+
 .hit-the-floor {
+  cursor: default;
+
   color: #fff;
   font-size: 12em;
   font-weight: bold;
@@ -20,7 +23,8 @@
 }
 
 .text{
-  color: rgb(255, 255, 255);
+  cursor: default;
+  color: rgb(230, 230, 230);
   text-align: center;
   font-size: 2.5em;
   font-family: Helvetica;
@@ -55,7 +59,7 @@
 }
 
 .buttons-con .action-link-wrap a {
-  background: #c9c9c9;
+  background: #bebebe;
   padding: 8px 25px;
   border-radius: 4px;
   color: #FFF;
@@ -68,4 +72,7 @@
 
 .buttons-con .action-link-wrap a:hover {
   background: #5A5C6C;
+}
+.foot{
+  padding-bottom: 80px;
 }

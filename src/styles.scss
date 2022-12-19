@@ -1,12 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
-body { //TODO
-  background-color: #f1f1f1;
+html{
+  background-image: linear-gradient( 270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100% );
+}
+
+.ind{
+    background: #e6e9e9;
+  background-color: #fff;
+  margin: 0em auto;
+  margin-top: 0em;
+  max-width: 1280px;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #545454;
+  line-height: 1.5;
+  margin-top: 20px;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%), 0 16px 16px rgb(0 0 0 / 10%);
+  border-radius: 4px;
+}
+
+main {
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  background-color: #ffffff;
 }
 header {
   height: 72px;
 padding: 0px 24px;
-width: 100%;
 display: flex;
+list-style: none;
+clear: right;
+background-color: #d4d4d4;
 }
 .topBar-inner{
   width: 1280px;
@@ -17,6 +41,18 @@ display: flex;
 .topBar-left{
   display: flex;
   flex: 1 1 0%;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+.rideshare{
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
 }
 .topBar-center{
   position: absolute;
@@ -33,40 +69,186 @@ display: flex;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
 }
 .publish-ride{
   margin-left: 0px;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
 }
 .profile{
   margin-left: 0px;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
 }
 .log{
   margin-left: 0px;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
+}
+.log:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 .reg{
   margin-left: 0px;
-  margin-right: 24px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
+}
+.reg:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
 .rides{
   margin-left: 0px;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
 }
 .auth{
   margin-left: 0px;
   margin-right: 24px;
   display: flex;
   align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+}
+.logout{
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
+  cursor: pointer; 
+}
+.logout:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+button{
+  background-color: #c0c0c0;
+  font-family: Calibri, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 100%;
+  color: rgb(116, 116, 116);
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+form {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.sourcess{
+  height: 30px;
+text-align: center;
+font-size: 22px;
+color: rgb(29, 29, 29);
+margin-top: 100px;
+background-color: #d4d4d4;
+font-style: italic;
+font-weight: bold;
+padding: 5px;
+margin-bottom: 20px;
+} 
+.sources{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-weight: 400;
+color: #0d0d0d;
+font-size: 16px;
+text-decoration: none;
+margin: 0 10px;
+ border-radius: 5px;
+  font-size: 16px;
+}
+.sources:hover {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+    0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+.about-rideshare{
+  text-align: left;
+  display: flex;
+flex-direction: row;
+list-style: none;
+padding: 0px;
+margin: 0px;
+}
+.about-us{
+  margin-left: 40px;
+  max-width: 1016px;
 }

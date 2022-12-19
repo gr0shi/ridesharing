@@ -1,39 +1,41 @@
-<header>
-  <div class="topBar-inner">
+<div class="ind">
+  <header>
+    <div class="topBar-inner">
 
-    <div class="topBar-left">
-      <a [routerLink]="''">Ridesharing Platform</a>
+      <div class="topBar-left">
+        <a class="rideshare" [routerLink]="''">Ridesharing Platform</a>
+      </div>
+
+      <div class="topBar=center"></div>
+
+      <div class="topBar-right">
+        <a class="reg" [routerLink]="'/auth/registration'">Регистрация</a>
+      </div>
     </div>
+  </header>
 
-    <div class="topBar=center"></div>
-
-    <div class="topBar-right">
-      <a class="reg" [routerLink]="'/auth/registration'">Регистрация</a>
-    </div>
+  <h1 style="text-align: center">Авторизация</h1>
+  <div class="alert-{{ message.type }}" *ngIf="message.text">
   </div>
-</header>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="container">
+      <label for="email">Почта: </label>
+      <input type="text" placeholder="Введите почту" formControlName="email" />
+      <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+        <span *ngIf="form.get('email')?.errors?.['required']">Почта не должна быть пустой</span>
+        <span *ngIf="form.get('email')?.errors?.['email']">Почта должна содержать @</span>
+      </span>
+      <br />
+      <br />
+      <label for="password">Пароль : </label>
+      <input type="password" placeholder="Введите пароль" formControlName="password" />
+      <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+        <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
+      </span>
+      <br>
+      <br>
+      <button type="submit" [disabled]="form.invalid">Войти</button>
 
-<h1 style="text-align: center">Авторизация</h1>
-<div class="alert-{{ message.type }}" *ngIf="message.text">
+    </div>
+  </form>
 </div>
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <div class="container">
-    <label for="email">Почта: </label>
-    <input type="text" placeholder="Введите почту" formControlName="email" />
-    <span *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
-      <span *ngIf="form.get('email')?.errors?.['required']">Почта не должна быть пустой</span>
-      <span *ngIf="form.get('email')?.errors?.['email']">Почта должна содержать @</span>
-    </span>
-
-    <br />
-    <br />
-
-    <label for="password">Пароль : </label>
-    <input type="password" placeholder="Введите пароль" formControlName="password" />
-    <span *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
-      <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
-    </span>
-    <button type="submit" [disabled]="form.invalid">Войти</button>
-
-  </div>
-</form>
