@@ -2,21 +2,33 @@
   "users": [
     {
       "email": "maxjmg@mail.ru",
-      "name": "root",
+      "nickname": "root",
       "password": "123456",
       "id": 1
     },
     {
       "email": "name@mail.ru",
-      "name": "name",
+      "nickname": "name",
       "password": "123456",
       "id": 2
     },
     {
       "email": "max@m.ru",
-      "name": "asgasg",
+      "nickname": "asgasg",
       "password": "max@m.ru",
       "id": 3
+    },
+    {
+      "email": "asgasg@asgasg",
+      "nickname": "nicnksf",
+      "password": "asgqw4wfsdf",
+      "id": 4
+    },
+    {
+      "email": "asg@ASgasgasg",
+      "nickname": "asasg",
+      "password": "asgasrasgt",
+      "id": 5
     }
   ],
   "ride": [
@@ -41,11 +53,13 @@
   ],
   "profile": [
     {
+      "email": "maxjmg@mail.ru",
+      "nickname": "root",
+      "password": "123456",
       "firstName": "Maxim",
       "lastName": "Grishin",
       "gender": "Male",
       "dateOfBirth": "07.04.2002",
-      "email": "maxjmg@mail.ru",
       "about": "Nonumy est sit sea ut dolor dolore. Sit erat takimata et et sea vero no tempor.",
       "isCar": false,
       "phoneNumber": 89877557031,

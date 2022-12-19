@@ -18,8 +18,8 @@
   <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="container">
       <label>Имя пользователя : </label>
-      <input type="text" placeholder="Имя пользователя" formControlName="name" />
-      <span *ngIf="form.get('name')?.invalid && form.get('name')?.touched">Имя не может быть пустым</span>
+      <input type="text" placeholder="Имя пользователя" formControlName="nickname" />
+      <span *ngIf="form.get('nickname')?.invalid && form.get('nickname')?.touched">Имя не может быть пустым</span>
 
       <br />
       <br />
@@ -50,7 +50,7 @@
       <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
     </span> -->
 
-      <button type="submit" [disabled]="form.invalid">Зарегистрироваться</button>
+      <button class="button-auth" type="submit" [disabled]="form.invalid">Зарегистрироваться</button>
     </div>
   </form>
 </div>

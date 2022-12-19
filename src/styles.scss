@@ -180,22 +180,6 @@ background-color: #d4d4d4;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
   0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
-button{
-  background-color: #c0c0c0;
-  font-family: Calibri, Helvetica, sans-serif;
-  font-size: 18px;
-  border-radius: 6px;
-  width: 100%;
-  color: rgb(116, 116, 116);
-  padding: 15px;
-  margin: 10px 0px;
-  border: none;
-  cursor: pointer;
-}
-button:hover{
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
-  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-}
 form {
   width: 500px;
   display: block;
@@ -217,13 +201,13 @@ input[type="password"] {
 .sourcess{
   height: 30px;
 text-align: center;
-font-size: 22px;
+font-size: 20px;
 color: rgb(29, 29, 29);
 margin-top: 100px;
 background-color: #d4d4d4;
 font-style: italic;
 font-weight: bold;
-padding: 5px;
+padding: 15px;
 margin-bottom: 20px;
 } 
 .sources{
@@ -234,7 +218,7 @@ font-size: 16px;
 text-decoration: none;
 margin: 0 10px;
  border-radius: 5px;
-  font-size: 16px;
+  font-size: 20px;
 }
 .sources:hover {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
@@ -252,4 +236,20 @@ margin: 0px;
   margin-left: 100px;
   display: block;
   width: 950px;
+}
+.button-auth{
+  background-color: #c0c0c0;
+  font-family: Calibri, Helvetica, sans-serif;
+  font-size: 18px;
+  border-radius: 6px;
+  width: 100%;
+  color: rgb(116, 116, 116);
+  padding: 15px;
+  margin: 10px 0px;
+  border: none;
+  cursor: pointer;
+}
+.button-auth:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }

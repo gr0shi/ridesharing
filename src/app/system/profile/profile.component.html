@@ -1,5 +1,32 @@
-<p>profile works!</p>
+<h1>Дополните профиль</h1>
 
-<article class="content dashboard-page">
-  <router-outlet></router-outlet>
-</article>
+<form>
+  <p>nickname: </p>
+  <p>email: </p>
+  <p>pass: {{user?.password}}</p>
+  <p>profile {{profile?.gender}} </p>
+  <br>
+  <div class="container">
+    <label>Имя пользователя : {{user?.nickname}}</label>
+    <input type="text" placeholder="Имя пользователя" formControlName="name" />
+
+    <br />
+    <br />
+
+    <label>Почта : {{user?.email}}</label>
+    <input type="text" placeholder="Введите почту" formControlName="email" />
+    <button type="submit">Изменить</button>
+
+    <br />
+    <br />
+
+    <label>Пароль : ••••••</label>
+    <input type="password" placeholder="Придумайте пароль" formControlName="password" />
+    <button type="submit">Изменить</button>
+
+
+    <br />
+    <br />
+
+  </div>
+</form>

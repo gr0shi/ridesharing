@@ -30,9 +30,5 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.user = JSON.parse(window.localStorage.getItem('user')!);
-    this.rideService.getRides()
-      .subscribe((rides: Ride[]) => {
-        this.rides = rides;
-      })
   }
 }
