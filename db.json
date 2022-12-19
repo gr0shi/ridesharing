@@ -11,6 +11,12 @@
       "name": "name",
       "password": "123456",
       "id": 2
+    },
+    {
+      "email": "max@m.ru",
+      "name": "asgasg",
+      "password": "max@m.ru",
+      "id": 3
     }
   ],
   "ride": [

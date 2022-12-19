@@ -30,7 +30,7 @@ export class RegistrationComponent implements OnInit {
       'email': new FormControl(null, [Validators.required, Validators.email]), // TODO: ПРОВЕРКА ПОЧТЫ НА НАЛИЧИЕ ВНУТРИ БАЗЫ ДАННЫХ
       'password': new FormControl(null, [Validators.required, Validators.minLength(6)]),
       'name': new FormControl(null, [Validators.required]),
-      'secondPassword': new FormControl(null, [Validators.required]) // TODO: ПРОВЕРКА ПАРОЛЯ НА СОВПАДЕНИЕ
+      //'secondPassword': new FormControl(null, [Validators.required]) // TODO: ПРОВЕРКА ПАРОЛЯ НА СОВПАДЕНИЕ
     });
   }
 
