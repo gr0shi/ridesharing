@@ -22,9 +22,6 @@ export class HomeComponent implements OnInit {
   // pipes test
 
   rides: Ride[] = [];
-  searchValue: string = "";
-  searchPlaceholder: string = "Название";
-  searchField: string = "name";
 
   constructor(
     private authService: AuthService,
@@ -37,15 +34,5 @@ export class HomeComponent implements OnInit {
       .subscribe((rides: Ride[]) => {
         this.rides = rides;
       })
-  }
-
-  changeCriteria(field: string) {
-    const nameMap: any = {
-      name: 'Название',
-      date: 'Дата',
-      id: 'Номер'
-    };
-    this.searchPlaceholder = nameMap[field];
-    this.searchField = field;
   }
 }
