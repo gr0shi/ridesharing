@@ -2,3 +2,71 @@
 body { //TODO
   background-color: #f1f1f1;
 }
+header {
+  height: 72px;
+padding: 0px 24px;
+width: 100%;
+display: flex;
+}
+.topBar-inner{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  font-weight: 500;
+}
+.topBar-left{
+  display: flex;
+  flex: 1 1 0%;
+}
+.topBar-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.topBar-right{
+  display: flex;
+}
+.find-ride{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.publish-ride{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.profile{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.log{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.reg{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.rides{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.auth{
+  margin-left: 0px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}

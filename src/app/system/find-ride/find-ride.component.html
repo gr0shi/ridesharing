@@ -1,42 +1,30 @@
 <p>find-ride works!</p>
 
-<nav>
-  <a [routerLink]="'/auth/login'"> Вход</a>
-  <a> / </a>
-  <a [routerLink]="'/auth/registration'"> Регистрация</a>
-</nav>
+<input type="text" [placeholder]="searchPlaceholder" [(ngModel)]="searchValue">
+<div>
+  <a (click)="changeCriteria('name')">Название</a>
+  <a (click)="changeCriteria('date')">Дата</a>
+  <a (click)="changeCriteria('id')">Номер</a>
+</div>
 
-<aside class="sidebar">
-  <nav class="menu">
-    <ul class="nav metismenu">
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/home'">
-          <i>Домашняя страница</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/profile'">
-          <i>Профиль</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/rides'">
-          <i>Ваши поездки</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/find'">
-          <i>Найти поездку</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/publish'">
-          <i>Опубликовать поездку</i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</aside>
+<table>
+  <thead>
+    <tr>
+      <th>№</th>
+      <th>Название</th>
+      <th>Дата</th>
+      <th>Описание</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of rides | appFilter: searchValue:searchField">
+      <th>{{c.id}}</th>
+      <td>{{c.name}}</td>
+      <td>{{c.date}}</td>
+      <td>{{c.description}}</td>
+    </tr>
+  </tbody>
+</table>
 
 <article class="content dashboard-page">
   <router-outlet></router-outlet>

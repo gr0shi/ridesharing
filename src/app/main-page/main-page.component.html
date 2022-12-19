@@ -1,38 +1,25 @@
-<p>main-page works!</p>
-<nav>
-  <a [routerLink]="'/auth/login'"> Вход</a>
-  <a> / </a>
-  <a [routerLink]="'/auth/registration'"> Регистрация</a>
-</nav>
+<header>
+  <div class="topBar-inner">
 
-<aside class="sidebar">
-  <nav class="menu">
-    <ul class="nav metismenu">
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/home'">
-          <i>Домашняя страница</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/profile'">
-          <i>Профиль</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/rides'">
-          <i>Ваши поездки</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/find'">
-          <i>Найти поездку</i>
-        </a>
-      </li>
-      <li routerLinkAction="Active">
-        <a [routerLink]="'/system/publish'">
-          <i>Опубликовать поездку</i>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</aside>
+    <div class="topBar-left">
+      <a [routerLink]="''">Ridesharing Platform</a>
+    </div>
+
+    <div class="topBar=center"></div>
+
+    <div class="topBar-right">
+      <div class="auth">
+        <a class="log" [routerLink]="'/auth/login'">Вход</a>
+        <a class="reg" [routerLink]="'/auth/registration'">Регистрация</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+
+</footer>

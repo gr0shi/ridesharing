@@ -48,9 +48,4 @@ export class HomeComponent implements OnInit {
     this.searchPlaceholder = nameMap[field];
     this.searchField = field;
   }
-
-  onLogout() {
-    this.authService.logout();
-    this.router.navigate(['/auth', 'login']);
-  }
 }

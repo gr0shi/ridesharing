@@ -1,3 +1,18 @@
+<header>
+  <div class="topBar-inner">
+
+    <div class="topBar-left">
+      <a [routerLink]="''">Ridesharing Platform</a>
+    </div>
+
+    <div class="topBar=center"></div>
+
+    <div class="topBar-right">
+      <a class="reg" [routerLink]="'/auth/registration'">Регистрация</a>
+    </div>
+  </div>
+</header>
+
 <h1 style="text-align: center">Авторизация</h1>
 <div class="alert-{{ message.type }}" *ngIf="message.text">
 </div>
@@ -19,11 +34,6 @@
       <span *ngIf="form.get('password')?.errors?.['required']">Пароль не должен быть пустым</span>
     </span>
     <button type="submit" [disabled]="form.invalid">Войти</button>
-    <div class="abc">
-      <input type="checkbox" checked="checked" /> Запомнить меня | Забыли
-      <a href="#"> пароль</a>? |
-      <a [routerLink]="'/auth/registration'"> Регистрация</a> |
-      <a routerLink=""> В начало</a>
-    </div>
+
   </div>
 </form>
