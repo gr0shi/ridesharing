@@ -8,7 +8,7 @@
       "lastName": "Grishin",
       "gender": "Мужчина",
       "dateOfBirth": "07.04.2002",
-      "about": "Nonumy est sit sea ut dolor dolore. Sit erat takimata et et sea vero no tempor.",
+      "about": "Aliquyam eos ipsum takimata ipsum dolor eos aliquyam sea dolores, et lorem consetetur sed ipsum kasd ipsum rebum amet dolores. Ea no sed eos gubergren, sadipscing et dolor invidunt nonumy sit no et. Diam accusam labore lorem et stet, accusam aliquyam eirmod et stet rebum stet clita invidunt, accusam clita.",
       "isCar": "Нет",
       "phoneNumber": 89877557031,
       "photoUrl": "https://sun9-50.userapi.com/impg/eDQ0-bfxtFgcHUTU8K230-4ZVomj9FGdM5CjHQ/F5zxhmD2OSM.jpg?size=900x900&quality=96&sign=5dfdaf9614ba07c9cc8f8b22e66e83ed&type=album",
@@ -28,6 +28,7 @@
       "description": "Без собак",
       "price": 1100,
       "author": "Кирилл",
+      "contacts": 816921898878,
       "id": 1
     },
     {
@@ -36,6 +37,7 @@
       "description": "Без кошек",
       "price": 900,
       "author": "Роман",
+      "contacts": 864626157933,
       "id": 2
     },
     {
@@ -44,6 +46,7 @@
       "description": "",
       "price": 850,
       "author": "Иван",
+      "contacts": 80462822133,
       "id": 3
     },
     {
@@ -52,6 +55,7 @@
       "description": "",
       "price": 200,
       "author": "Илья",
+      "contacts": 832804651987,
       "id": 4
     },
     {
@@ -60,6 +64,7 @@
       "description": "",
       "price": 560,
       "author": "Анастасия",
+      "contacts": 8347857223,
       "id": 5
     },
     {
@@ -68,6 +73,7 @@
       "description": "Во время поездки, курить нельзя",
       "price": 680,
       "author": "Эмир",
+      "contacts": 81579112402,
       "id": 6
     },
     {
@@ -76,6 +82,7 @@
       "description": "",
       "price": 620,
       "author": "Арина",
+      "contacts": 85818938388,
       "id": 7
     },
     {
@@ -84,6 +91,7 @@
       "description": "",
       "price": 560,
       "author": "Елисей",
+      "contacts": 8649724882,
       "id": 8
     },
     {
@@ -92,6 +100,7 @@
       "description": "Оплата наличными",
       "price": 1800,
       "author": "Олег",
+      "contacts": 8739822371,
       "id": 9
     },
     {
@@ -100,6 +109,7 @@
       "description": "",
       "price": 1210,
       "author": "Елизавета",
+      "contacts": 83948856910,
       "id": 10
     },
     {
@@ -108,22 +118,8 @@
       "description": "adgasgasgasg",
       "price": "1233",
       "author": "asasg",
+      "contacts": 1234567890,
       "id": 11
-    }
-  ],
-  "profile": [
-    {
-      "email": "maxjmg@mail.ru",
-      "nickname": "root",
-      "password": "123456",
-      "firstName": "Maxim",
-      "lastName": "Grishin",
-      "gender": "Male",
-      "dateOfBirth": "07.04.2002",
-      "about": "Nonumy est sit sea ut dolor dolore. Sit erat takimata et et sea vero no tempor.",
-      "isCar": false,
-      "phoneNumber": 89877557031,
-      "id": 1
     }
   ]
 }

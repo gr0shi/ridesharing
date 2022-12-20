@@ -27,8 +27,8 @@ export class CreateRideComponent implements OnInit {
   }
 
   onSubmit(f: NgForm) {
-    const { name, date, description, price, author } = f.value;
-    const ride = new Ride(name, date, description, price, author);
+    const { name, date, description, price, author, contacts } = f.value;
+    const ride = new Ride(name, date, description, price, author, contacts);
     console.log(ride);
 
     this.rideService.createRide(ride)

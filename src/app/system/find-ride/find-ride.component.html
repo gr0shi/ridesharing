@@ -14,7 +14,8 @@
       <th>Дата</th> <a> | </a>
       <th>Описание</th> <a> | </a>
       <th>Цена</th> <a> | </a>
-      <th>Водитель</th>
+      <th>Водитель</th> <a> | </a>
+      <th>Контакты</th>
     </tr>
   </thead>
   <tbody>
@@ -24,8 +25,9 @@
       <td>{{c.name}}</td> <a> | </a>
       <td>{{c.date }}</td> <a> | </a>
       <td>{{c.description}}</td> <a> | </a>
-      <td>{{c.price | currency:"RUB":"symbol"}}</td> <a> | </a>
-      <td>{{c.author}}</td>
+      <td> {{c.price | currency:"RUB":"symbol"}} </td> <a> | </a>
+      <td>{{c.author}}</td> <a> | </a>
+      <td>{{c.contacts}}</td>
     </tr>
   </tbody>
 </table>

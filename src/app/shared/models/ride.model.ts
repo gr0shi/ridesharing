@@ -5,6 +5,7 @@ export class Ride {
     public description: string,
     public price: number,
     public author: string,
+    public contacts: number,
     public id?: number
   ) { }
 }
