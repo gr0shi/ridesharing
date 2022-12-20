@@ -261,6 +261,7 @@ margin: 0px;
   width: 350px;
   height: 350px;
   margin: 7px 0 7px 7px;
+  border-radius: 8px;
 }
 .change-data{
   float: right;
@@ -290,4 +291,7 @@ margin: 0px;
 }
 .publ-ride{
   width: 100%;
+}
+.entire-profile{
+  max-width: 850px;
 }

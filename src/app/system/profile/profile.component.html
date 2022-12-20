@@ -1,19 +1,17 @@
 <img class="prof-photo" [src]="user?.photoUrl" alt="Фото">
+<div class="entire-profile">
+  <h1 class="user-nickname">{{user?.nickname}}</h1>
 
-<h1 class="user-nickname">{{user?.nickname}}</h1>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;"> {{user?.firstName}} {{user?.lastName}}</p>
+  <!-- <p class="photo"> {{user?.photoUrl}} </p> -->
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">Дата рождения : {{user?.dateOfBirth}}</p>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">Почта : {{user?.email}}</p>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">Номер телефона : {{user?.phoneNumber}}</p>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">Пол : {{user?.gender}}</p>
 
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;"> {{user?.firstName}} {{user?.lastName}}</p>
-<!-- <p class="photo"> {{user?.photoUrl}} </p> -->
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Дата рождения : {{user?.dateOfBirth}}</p>
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Почта : {{user?.email}}</p>
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Номер телефона : {{user?.phoneNumber}}</p>
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Пол : {{user?.gender}}</p>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">О себе : {{user?.about}}</p>
+  <p style="margin-left:20px; font-family: Montserrat, sans-serif;">Автомобили : {{user?.isCar}}</p>
+  <br>
+  <!--TODO доделать изменение данных<h1 class="change-data" [routerLink]="'/system/editprofile'">Изменить данные</h1> -->
 
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">О себе : {{user?.about}}</p>
-<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Автомобили : {{user?.isCar}}</p>
-<br>
-<h1 class="change-data" [routerLink]="'/system/editprofile'">Изменить данные</h1>
-<form>
-  <div>
-  </div>
-</form>
+</div>
