@@ -18,6 +18,9 @@ import { DropdownDirective } from '../shared/directives/dropdown.directive';
 
 import { NewPipe } from '../shared/pipes/new.pipe';
 import { RidePipe } from '../shared/pipes/ride.pipe';
+import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
+import { DeleteRideComponent } from './publish-ride/delete-ride/delete-ride.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,13 +34,16 @@ import { RidePipe } from '../shared/pipes/ride.pipe';
     EditRideComponent,
     DropdownDirective,
     NewPipe,
-    RidePipe
+    RidePipe,
+    EditProfileComponent,
+    DeleteRideComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     SharedModule,
-    SystemRoutingModule
+    SystemRoutingModule,
+    HttpClientModule
   ],
   providers: [
 

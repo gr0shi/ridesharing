@@ -1,11 +1,15 @@
-<p>publish-ride works!</p>
-
-<div *ngIf="isLoaded">Загрузка...</div>
+<!-- <div *ngIf="isLoaded">Загрузка...</div> -->
 <div>
-  <p>Добавление записи</p>
-  <app-create-ride (onRideAdd)="newRideAdded($event)"></app-create-ride>
+  <h1>Опубликовать поездку</h1>
+  <app-create-ride class="" (onRideAdd)="newRideAdded($event)"></app-create-ride>
 </div>
+
 <div>
-  <p>Изменение записи</p>
-  <app-edit-ride [rides]="rides" (onRideEdit)="rideWasEdited($event)"></app-edit-ride>
+  <h1>Редактировать поездку</h1>
+  <app-edit-ride class="" [rides]="rides" (onRideEdit)="rideWasEdited($event)"></app-edit-ride>
+</div>
+
+<div>
+  <h1>Удалить поездку</h1>
+  <app-delete-ride class="publ-ride"></app-delete-ride>
 </div>

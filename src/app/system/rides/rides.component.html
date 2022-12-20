@@ -1,5 +1,26 @@
 <p>rides works!</p>
-
+<table>
+  <thead>
+    <tr>
+      <th>№</th> <a> | </a>
+      <th>Маршрут</th> <a> | </a>
+      <th>Дата</th> <a> | </a>
+      <th>Описание</th> <a> | </a>
+      <th>Цена</th> <a> | </a>
+      <th>Водитель</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of rides | appFilter: searchValue:searchField">
+      <th>{{c.id}}</th> <a> | </a>
+      <td>{{c.name}}</td> <a> | </a>
+      <td>{{c.date }}</td> <a> | </a>
+      <td>{{c.description}}</td> <a> | </a>
+      <td>{{c.price | currency:"RUB":"symbol"}}</td> <a> | </a>
+      <td>{{c.author}}</td>
+    </tr>
+  </tbody>
+</table>
 <article class="content dashboard-page">
   <router-outlet></router-outlet>
 </article>

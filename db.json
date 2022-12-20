@@ -4,51 +4,111 @@
       "email": "maxjmg@mail.ru",
       "nickname": "root",
       "password": "123456",
+      "firstName": "Maxim",
+      "lastName": "Grishin",
+      "gender": "Мужчина",
+      "dateOfBirth": "07.04.2002",
+      "about": "Nonumy est sit sea ut dolor dolore. Sit erat takimata et et sea vero no tempor.",
+      "isCar": "Нет",
+      "phoneNumber": 89877557031,
+      "photoUrl": "https://sun9-50.userapi.com/impg/eDQ0-bfxtFgcHUTU8K230-4ZVomj9FGdM5CjHQ/F5zxhmD2OSM.jpg?size=900x900&quality=96&sign=5dfdaf9614ba07c9cc8f8b22e66e83ed&type=album",
       "id": 1
     },
     {
-      "email": "name@mail.ru",
-      "nickname": "name",
-      "password": "123456",
+      "email": "1234124124@asfasg",
+      "nickname": "masgasg",
+      "password": "12345688",
+      "id": 2
+    }
+  ],
+  "rides": [
+    {
+      "name": "Нижний Новгород → Москва",
+      "date": "31.12.2022",
+      "description": "Без собак",
+      "price": 1100,
+      "author": "Кирилл",
+      "id": 1
+    },
+    {
+      "name": "Ардатов → Санкт-Петербург",
+      "date": "06.01.2023",
+      "description": "Без кошек",
+      "price": 900,
+      "author": "Роман",
       "id": 2
     },
     {
-      "email": "max@m.ru",
-      "nickname": "asgasg",
-      "password": "max@m.ru",
+      "name": "Ардатов → Нижний Новгород",
+      "date": "21.12.2022",
+      "description": "",
+      "price": 850,
+      "author": "Иван",
       "id": 3
     },
     {
-      "email": "asgasg@asgasg",
-      "nickname": "nicnksf",
-      "password": "asgqw4wfsdf",
+      "name": "Тольятти → Самара",
+      "date": "22.12.2023",
+      "description": "",
+      "price": 200,
+      "author": "Илья",
       "id": 4
     },
     {
-      "email": "asg@ASgasgasg",
-      "nickname": "asasg",
-      "password": "asgasrasgt",
+      "name": "Екатеринбург → Челябинск",
+      "date": "26.12.2022",
+      "description": "",
+      "price": 560,
+      "author": "Анастасия",
       "id": 5
-    }
-  ],
-  "ride": [
-    {
-      "name": "Название записи",
-      "date": "0012-12-12",
-      "description": "Текст записи",
-      "id": 1
     },
     {
-      "name": "Новая запись",
-      "date": "2022-11-26",
-      "description": "Описание новой записи",
-      "id": 2
+      "name": "Барнаул → Новосибирск",
+      "date": "20.02.2023",
+      "description": "Во время поездки, курить нельзя",
+      "price": 680,
+      "author": "Эмир",
+      "id": 6
     },
     {
-      "name": "asfasf",
-      "date": "2022-12-19",
-      "description": "asfasf",
-      "id": 3
+      "name": "Казань → Набережные Челны",
+      "date": "13.01.2023",
+      "description": "",
+      "price": 620,
+      "author": "Арина",
+      "id": 7
+    },
+    {
+      "name": "Челябинск → Екатеринбург",
+      "date": "29.12.2022",
+      "description": "",
+      "price": 560,
+      "author": "Елисей",
+      "id": 8
+    },
+    {
+      "name": "Кинешма → Северодвинск",
+      "date": "28.02.2023",
+      "description": "Оплата наличными",
+      "price": 1800,
+      "author": "Олег",
+      "id": 9
+    },
+    {
+      "name": "Рязань → Москва",
+      "date": "26.12.2022",
+      "description": "",
+      "price": 1210,
+      "author": "Елизавета",
+      "id": 10
+    },
+    {
+      "name": "test -> test",
+      "date": "2022-12-07",
+      "description": "adgasgasgasg",
+      "price": "1233",
+      "author": "asasg",
+      "id": 11
     }
   ],
   "profile": [

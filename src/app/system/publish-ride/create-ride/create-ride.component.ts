@@ -23,20 +23,18 @@ export class CreateRideComponent implements OnInit {
 
   private showMassage(message: Message) {
     this.message = message;
-    window.setTimeout(() => {
-      this.message.text = "21212";
-    }, 5000);
+    alert(this.message.text)
   }
 
   onSubmit(f: NgForm) {
-    const { name, date, description } = f.value;
-    const ride = new Ride(name, date, description);
+    const { name, date, description, price, author } = f.value;
+    const ride = new Ride(name, date, description, price, author);
     console.log(ride);
 
     this.rideService.createRide(ride)
       .subscribe(() => {
         this.showMassage({
-          text: 'Новый пост создан',
+          text: 'Поездка создана',
           type: 'success'
         })
         f.reset();

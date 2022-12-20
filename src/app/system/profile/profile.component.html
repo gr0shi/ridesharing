@@ -1,32 +1,19 @@
-<h1>Дополните профиль</h1>
+<img class="prof-photo" [src]="user?.photoUrl" alt="Фото">
 
+<h1 class="user-nickname">{{user?.nickname}}</h1>
+
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;"> {{user?.firstName}} {{user?.lastName}}</p>
+<!-- <p class="photo"> {{user?.photoUrl}} </p> -->
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Дата рождения : {{user?.dateOfBirth}}</p>
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Почта : {{user?.email}}</p>
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Номер телефона : {{user?.phoneNumber}}</p>
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Пол : {{user?.gender}}</p>
+
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">О себе : {{user?.about}}</p>
+<p style="margin-left:20px; font-family: Montserrat, sans-serif;">Автомобили : {{user?.isCar}}</p>
+<br>
+<h1 class="change-data" [routerLink]="'/system/editprofile'">Изменить данные</h1>
 <form>
-  <p>nickname: </p>
-  <p>email: </p>
-  <p>pass: {{user?.password}}</p>
-  <p>profile {{profile?.gender}} </p>
-  <br>
-  <div class="container">
-    <label>Имя пользователя : {{user?.nickname}}</label>
-    <input type="text" placeholder="Имя пользователя" formControlName="name" />
-
-    <br />
-    <br />
-
-    <label>Почта : {{user?.email}}</label>
-    <input type="text" placeholder="Введите почту" formControlName="email" />
-    <button type="submit">Изменить</button>
-
-    <br />
-    <br />
-
-    <label>Пароль : ••••••</label>
-    <input type="password" placeholder="Придумайте пароль" formControlName="password" />
-    <button type="submit">Изменить</button>
-
-
-    <br />
-    <br />
-
+  <div>
   </div>
 </form>

@@ -19,6 +19,14 @@ export class UserService {
 	createUser(user: User) {
 		return this.http.post('http://localhost:3000/users', user)
 	}
+
+	updateUser(user: User) {
+		return this.http.put('http://localhost:3000/users/${data.id}', user);
+	}
+
+	deleteUser(user: User) {
+		// return this.http.delete('http://localhost:3000/ride/${data.id}', user);
+	} //TODO Сделать удаление пользователя
 }
 
 export { User };

@@ -14,6 +14,7 @@ import { RidesComponent } from './system/rides/rides.component';
 import { FindRideComponent } from './system/find-ride/find-ride.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { InternalServerComponent } from './error-pages/internal-server/internal-server.component';
+import { EditProfileComponent } from './system/profile/edit-profile/edit-profile.component';
 
 
 const routes: Routes = [
@@ -28,12 +29,13 @@ const routes: Routes = [
     path: 'system', component: SystemComponent, canActivate: [AuthGuard], canActivateChild: [AuthGuard], children: [
       { path: 'home', component: HomeComponent },
       { path: 'profile', component: ProfileComponent },
+      { path: 'editprofile', component: EditProfileComponent },
       { path: 'rides', component: RidesComponent },
       { path: 'find', component: FindRideComponent },
       { path: 'publish', component: PublishRideComponent },
     ],
   },
-  // { path: '', redirectTo: 'auth', pathMatch: 'full' }
+  //* errors
   { path: 'internal-server', component: InternalServerComponent },
   { path: 'page-not-found', component: PageNotFoundComponent },
   { path: '**', component: PageNotFoundComponent }

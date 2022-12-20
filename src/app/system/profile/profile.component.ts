@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from 'src/app/shared/models/profile.model';
 import { User } from 'src/app/shared/models/user.model';
+
 
 @Component({
   selector: 'app-profile',
@@ -10,10 +10,8 @@ import { User } from 'src/app/shared/models/user.model';
 export class ProfileComponent implements OnInit {
 
   user?: User;
-  profile?: Profile;
 
   ngOnInit(): void {
     this.user = JSON.parse(window.localStorage.getItem('user')!);
-    this.profile = JSON.parse(window.localStorage.getItem('profile')!);
   }
 }

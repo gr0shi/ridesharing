@@ -11,7 +11,7 @@ export class FindRideComponent implements OnInit {
 
   rides: Ride[] = [];
   searchValue: string = "";
-  searchPlaceholder: string = "Название";
+  searchPlaceholder: string = "Поиск по маршруту";
   searchField: string = "name";
 
   constructor(private rideService: RideService) { }
@@ -25,11 +25,15 @@ export class FindRideComponent implements OnInit {
 
   changeCriteria(field: string) {
     const nameMap: any = {
-      name: 'Название',
-      date: 'Дата',
-      id: 'Номер'
+      name: 'Поиск по маршруту',
+      date: 'Поиск по дате',
+      price: 'Поиск по цене',
     };
     this.searchPlaceholder = nameMap[field];
     this.searchField = field;
+  }
+
+  myRide(ride: string) {
+
   }
 }

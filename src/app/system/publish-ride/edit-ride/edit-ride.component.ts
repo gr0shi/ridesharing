@@ -30,12 +30,12 @@ export class EditRideComponent implements OnInit {
   }
 
   onSubmit(f: NgForm) {
-    const { name, date, description } = f.value;
-    const ride = new Ride(name, date, description, +this.currentRideID);
+    const { name, date, description, price, author } = f.value;
+    const ride = new Ride(name, date, description, price, author, +this.currentRideID);
     // this.rideService.updateRide(ride)
     //   .subscribe((data: Ride) => {
     //     this.onRideEdit.emit(data);
-    //     console.log('Категория успешно отредактирована');
-    //   })//BUG
+    //     alert('Поездка успешно отредактирована');
+    //   })//BUG //TODO Сделать редактирование поездок
   }
 }

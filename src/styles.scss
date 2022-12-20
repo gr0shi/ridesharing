@@ -193,11 +193,9 @@ input[type="password"] {
   margin: 8px 0;
   padding: 12px 20px;
   display: inline-block;
-  border: 2px solid rgb(0, 0, 0);
   border-radius: 6px;
   box-sizing: border-box;
 }
-
 .sourcess{
   height: 30px;
 text-align: center;
@@ -237,6 +235,11 @@ margin: 0px;
   display: block;
   width: 950px;
 }
+.about-us1{
+  margin-left: 75px;
+  display: block;
+  width: 950px;
+}
 .button-auth{
   background-color: #c0c0c0;
   font-family: Calibri, Helvetica, sans-serif;
@@ -252,4 +255,39 @@ margin: 0px;
 .button-auth:hover{
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
   0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+.prof-photo{
+  float:right;
+  width: 350px;
+  height: 350px;
+  margin: 7px 0 7px 7px;
+}
+.change-data{
+  float: right;
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  font-family: "Montserrat", sans-serif;
+  padding: 4px;
+  color: rgb(29, 29, 29);
+  cursor: pointer; 
+}
+.change-data:hover{
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+.user-nickname{
+  margin-left: 20px;
+  max-width: 250px;
+}
+.findride{
+  padding: 4px;
+}
+.publ-ride{
+  width: 100%;
 }
