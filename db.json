@@ -19,6 +19,12 @@
       "nickname": "masgasg",
       "password": "12345688",
       "id": 2
+    },
+    {
+      "email": "123@123",
+      "nickname": "фыафыафыа",
+      "password": "123456",
+      "id": 3
     }
   ],
   "rides": [
@@ -120,6 +126,14 @@
       "author": "asasg",
       "contacts": 1234567890,
       "id": 11
+    },
+    {
+      "name": "ардатов -> куданибул",
+      "date": "31.02.2002",
+      "description": "фыпфыпфып",
+      "price": "300",
+      "author": "Максим",
+      "id": 12
     }
   ]
 }

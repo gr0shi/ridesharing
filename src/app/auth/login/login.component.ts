@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 
 import { Message } from '../../shared/models/message.model'
@@ -70,7 +70,6 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     const formData = this.form.value;
     console.log(this.form);
-
     this.userService.getUsers(formData.email)
       .subscribe((user: User) => {
         if (user) {
