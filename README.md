@@ -1,3 +1,9 @@
+# chat_cpp
+
+## Сайт райдшеринговой платформы на Angular для курсовой работы
+
+"WEB-технологии" (3 семестр)
+
 # Ridesharing Platform
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
